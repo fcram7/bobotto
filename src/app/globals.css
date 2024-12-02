@@ -70,3 +70,7 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.menu {
+  @apply after:transform after:transition-transform after:ease-linear after:duration-150 after:border-[0.05rem] after:content-[''] after:border-solid after:border-primary after:origin-left after:scale-x-0 hover:after:scale-x-[10%] lg:hover:after:scale-x-110 after:block
+}
