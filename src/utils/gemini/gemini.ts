@@ -1,17 +1,13 @@
 import { GoogleGenerativeAI } from '@google/generative-ai'
 
-type gemini = {
-  prompt: string;
-}
-
-export const gemini = async ({ prompt }: gemini) => {
-  const genAI = new GoogleGenerativeAI(process.env.NEXT_GEMINI_KEY!);
+export const gemini = async (prompt: string) => {
+  const genAI = new GoogleGenerativeAI(process.env.NEXT_PUBLIC_GEMINI_KEY as string);
   const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
 
   try {
     const result = await model.generateContent(prompt);
 
-    return result;
+    return result.response.text();
   } catch (err) {
     console.error(err);
 
