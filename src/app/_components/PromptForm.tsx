@@ -43,7 +43,7 @@ export const PromptForm = () => {
           name='prompt'
           render={({ field }) => <FormItemComponent field={field} />}
         />
-        <Button className='bg-serikaGray border-serikaWhite hover:border-serikaGray hover:bg-serikaYellow hover:text-serikaGray' variant='outline' type='submit'>Enter</Button>
+        <Button className='bg-serikaGray border-serikaWhite hover:border-serikaGray hover:bg-serikaYellow hover:text-primary' variant='outline' type='submit'>Enter</Button>
       </form>
     </Form>
   );
