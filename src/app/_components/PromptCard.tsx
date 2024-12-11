@@ -8,7 +8,7 @@ type promptCard = {
 
 export const PromptCard = ({ user, prompt, cardIndex }: promptCard) => {
   return (
-    <Card className={`w-fit h-fit border-primary ${cardIndex % 2 !== 0 ? 'ms-4' : 'ms-0'}`}>
+    <Card className={`w-fit h-fit border-serikaYellow text-serikaWhite bg-serikaGray ${cardIndex % 2 !== 0 ? 'ms-4' : 'ms-0'}`}>
       <CardHeader>
         <CardTitle>{user}</CardTitle>
       </CardHeader>
