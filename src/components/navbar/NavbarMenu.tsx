@@ -7,7 +7,7 @@ type menu = {
 
 export const NavbarMenu = ({ menu, href }: menu) => {
   return (
-    <li className='nav-link-menu menu'>
+    <li className='nav-link-menu menu hover:text-serikaYellow transition-colors duration-200 ease-in-out'>
       <Link href={href} className='lg:text-lg'>
         {menu}
       </Link>

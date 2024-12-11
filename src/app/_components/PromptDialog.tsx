@@ -28,11 +28,9 @@ export const PromptDialog = () => {
             ))}
           </div>
         ) : (
-          <div className="flex items-center justify-center gap-4 h-full">
-            <Loader2 size={48} className='animate-spin' />
-            <p className='text-2xl lg:text-4xl'>
-              Waiting for your prompt...
-            </p>
+          <div className='flex items-center justify-center gap-4 h-full text-serikaWhite'>
+            <Loader2 size={48} className='animate-spin' color='#ECE4D0' />
+            <p className='text-2xl lg:text-4xl'>Waiting for your prompt...</p>
           </div>
         )}
       </div>

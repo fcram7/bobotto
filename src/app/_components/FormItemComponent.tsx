@@ -15,7 +15,7 @@ export const FormItemComponent = ({ field }: geminiInput) => {
     <FormItem className='py-3'>
       <FormLabel className='lg:text-xl'>Your Prompt</FormLabel>
       <FormControl>
-        <Textarea className='h-20' placeholder='Type what you want to find out...' required {...field} />
+        <Textarea className='h-20 border-serikaWhite focus:border-serikaYellow' placeholder='Type what you want to find out...' required {...field} />
       </FormControl>
       <FormDescription>As for now you can only use text for your prompt</FormDescription>
       <FormMessage />
