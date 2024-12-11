@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export const About = () => {
   return (
-    <section className='about-section px-[4%] lg:px-[2%] py-44'>
+    <section className='about-section px-[4%] lg:px-[2%] py-44 text-serikaWhite'>
       <h1 className='about-section__title text-2xl lg:text-4xl font-semibold'>
         About Bobotto
       </h1>
@@ -26,7 +26,7 @@ export const About = () => {
           Bobotto&#39;s repository on Github down below.
         </p>
         <Link href='https://github.com/fcram7/bobotto' target='_blank'>
-          <Button>
+          <Button variant='outline' className='bg-serikaGray hover:bg-serikaYellow hover:border-serikaGray'>
             <Github /> Github Repository
           </Button>
         </Link>
