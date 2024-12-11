@@ -37,13 +37,13 @@ export const PromptForm = () => {
 
   return (
     <Form {...promptForm}>
-      <form onSubmit={promptForm.handleSubmit(onSubmit)} className='space-y-8'>
+      <form onSubmit={promptForm.handleSubmit(onSubmit)} className='space-y-8 text-serikaWhite'>
         <FormField
           control={promptForm.control}
           name='prompt'
           render={({ field }) => <FormItemComponent field={field} />}
         />
-        <Button type='submit'>Enter</Button>
+        <Button className='bg-serikaGray border-serikaWhite hover:border-serikaGray hover:bg-serikaYellow hover:text-serikaGray' variant='outline' type='submit'>Enter</Button>
       </form>
     </Form>
   );
